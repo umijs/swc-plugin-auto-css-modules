@@ -1,0 +1,27 @@
+{
+  "name": "swc-plugin-auto-css-modules",
+  "version": "1.0.0",
+  "description": "Auto css modules plugin for swc",
+  "author": "fz6m",
+  "license": "MIT",
+  "homepage": "https://github.com/xn-sakina/swc-plugin-auto-css-modules#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xn-sakina/swc-plugin-auto-css-modules"
+  },
+  "keywords": [
+    "swc-plugin",
+    "auto-css-modules"
+  ],
+  "main": "swc_plugin_auto_css_modules.wasm",
+  "scripts": {
+    "build": "cargo build-wasi --release",
+    "move": "cp ./target/wasm32-wasi/release/swc_plugin_auto_css_modules.wasm .",
+    "test:cargo": "cargo test",
+    "test:node": "cd ./example && pnpm tsx ./index.ts",
+    "test": "pnpm test:cargo && pnpm test:node",
+    "prepublishOnly": "pnpm build && pnpm move && pnpm test",
+    "push": "npm publish --access public --registry https://registry.npmjs.com/"
+  },
+  "files": ["swc_plugin_auto_css_modules.wasm"]
+}

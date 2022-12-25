@@ -1,0 +1,10 @@
+/target
+^target/
+target
+
+# npm
+node_modules
+.DS_Store
+
+/swc_plugin_auto_css_modules.wasm
+/example/.swc

@@ -1,0 +1,24 @@
+[package]
+name = "swc_plugin_auto_css_modules"
+version = "1.0.0"
+edition = "2021"
+authors = ["fz6m"]
+description = "Auto css modules plugin for swc"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+
+[dependencies]
+serde = "1"
+swc_core = { version = "0.48.29", features = [
+  "ecma_plugin_transform",
+  "ecma_utils",
+  "ecma_visit",
+  "ecma_ast",
+  "common",
+] }
