@@ -8,3 +8,4 @@ node_modules
 
 /swc_plugin_auto_css_modules.wasm
 /example/.swc
+/debug

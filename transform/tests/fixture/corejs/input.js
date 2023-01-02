@@ -1,0 +1,10 @@
+import a from 'core-js';
+import b from 'core-js/cc';
+import c from 'core-js/cc/dd';
+import 'core-js';
+import 'core-js/cc';
+import 'core-js/cc/dd';
+import d from '../core-js';
+import e from './core-js';
+import { f } from 'foo';
+import * as g from 'foo';

@@ -1,24 +1,26 @@
 [package]
-name = "swc_plugin_auto_css_modules"
+name = "auto_css_modules"
 version = "1.1.0"
-edition = "2021"
 authors = ["fz6m"]
 description = "Auto css modules plugin for swc"
+edition = "2021"
 license = "MIT"
 repository = "https://github.com/xn-sakina/swc-plugin-auto-css-modules.git"
 publish = false
 
-[lib]
-crate-type = ["cdylib", "rlib"]
-
-[profile.release]
-lto = true
-
 [dependencies]
-serde_json = "1.0.79"
-auto_css_modules = { version = "1.0.1", path = "./transform" }
+serde = { version = "1.0.152", features = ["derive"] }
 swc_core = { version = "0.48.29", features = [
-  "ecma_plugin_transform",
   "ecma_visit",
   "ecma_ast",
 ] }
+
+[dev-dependencies]
+serde_json = "1.0.79"
+swc_core = { features = [
+  "ecma_parser",
+  "ecma_transforms",
+  "testing_transform",
+  "common",
+], version = "0.48.29" }
+testing = "0.31.25"
