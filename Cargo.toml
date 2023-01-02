@@ -1,6 +1,6 @@
 [package]
 name = "swc_plugin_auto_css_modules"
-version = "1.1.0"
+version = "1.2.0"
 edition = "2021"
 authors = ["fz6m"]
 description = "Auto css modules plugin for swc"
@@ -16,7 +16,7 @@ lto = true
 
 [dependencies]
 serde_json = "1.0.79"
-auto_css_modules = { version = "1.0.1", path = "./transform" }
+auto_css_modules = { version = "1.2.0", path = "./transform" }
 swc_core = { version = "0.48.29", features = [
   "ecma_plugin_transform",
   "ecma_visit",

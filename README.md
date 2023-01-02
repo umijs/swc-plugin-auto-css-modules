@@ -35,13 +35,13 @@ import styles from './index.less?modules'
 
 ### Lock `core-js` import
 
-Lock `core-js` import by config `style_file_suffix`.
+Lock `core-js` import by config `lock_core_js_pkg_path`.
 
 ```ts
 plugins: [
   [
     'swc-plugin-auto-css-modules',
-    { style_file_suffix: dirname(require.resolve('core-js/package.json')) },
+    { lock_core_js_pkg_path: dirname(require.resolve('core-js/package.json')) },
   ],
 ]
 ```

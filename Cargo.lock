@@ -89,7 +89,7 @@ dependencies = [
 
 [[package]]
 name = "auto_css_modules"
-version = "1.1.0"
+version = "1.2.0"
 dependencies = [
  "serde",
  "swc_core",
@@ -1542,7 +1542,7 @@ dependencies = [
 
 [[package]]
 name = "swc_plugin_auto_css_modules"
-version = "1.1.0"
+version = "1.2.0"
 dependencies = [
  "auto_css_modules",
  "serde_json",
