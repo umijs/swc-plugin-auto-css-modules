@@ -23,12 +23,41 @@ Auto css modules plugin for swc.
 }
 ```
 
-This plugin will auto add the `?modules` suffix for webpack `resourceQuery`.
+### Auto css modules
+
+This plugin will auto add the `?modules` suffix.
 
 ```ts
 import styles from './index.less'
 // to
 import styles from './index.less?modules'
+```
+
+### Lock `core-js` import
+
+Lock `core-js` import by config `style_file_suffix`.
+
+```ts
+plugins: [
+  [
+    'swc-plugin-auto-css-modules',
+    { style_file_suffix: dirname(require.resolve('core-js/package.json')) },
+  ],
+]
+```
+
+```ts
+import 'core-js/es/modules'
+// to
+import '/node_modules/**/core-js/es/modules'
+```
+
+## Config
+
+See [types](./index.d.ts) file
+
+```ts
+import type { ISwcPluginAutoCssModulesConfig } from 'swc-plugin-auto-css-modules'
 ```
 
 ## License

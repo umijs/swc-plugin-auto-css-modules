@@ -1,6 +1,6 @@
 {
   "name": "swc-plugin-auto-css-modules",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Auto css modules plugin for swc",
   "author": "fz6m",
   "license": "MIT",
