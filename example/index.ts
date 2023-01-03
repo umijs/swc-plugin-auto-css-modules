@@ -20,8 +20,8 @@ import b from "foo.scss?modules";
 import c from "foo.sass?modules";
 import d from "../foo.css?modules";
 import e from "./foo.styl?modules";
-import { f } from "foo";
-import * as g from "foo";
+import { f } from 'foo';
+import * as g from 'foo';
 a, b, c, d, e, f, g;
 `.trim()
 )

@@ -6,17 +6,7 @@ export const transform = (
   opts: ISwcPluginAutoCssModulesConfig = {}
 ) => {
   return transformSync(code, {
-    module: {
-      type: 'es6',
-      ignoreDynamic: true,
-    },
     jsc: {
-      parser: {
-        syntax: 'typescript',
-        dynamicImport: true,
-        tsx: true,
-      },
-      target: 'es5',
       experimental: {
         plugins: [
           [
@@ -27,13 +17,34 @@ export const transform = (
           ],
         ],
       },
+      parser: {
+        syntax: 'typescript',
+        dynamicImport: true,
+        tsx: true,
+      },
+      target: 'es2015',
       minify: {
-        mangle: false,
         compress: false,
+        mangle: false,
+      },
+      transform: {
+        react: {
+          runtime: 'automatic',
+          pragma: 'React.createElement',
+          pragmaFrag: 'React.Fragment',
+          throwIfNamespace: true,
+          development: true,
+          useBuiltins: true,
+        },
       },
     },
+    module: {
+      type: 'es6',
+      ignoreDynamic: true,
+    },
     minify: false,
-    filename: 'index.ts',
+    isModule: true,
     sourceMaps: false,
+    filename: 'index.tsx',
   })
 }
