@@ -27,5 +27,6 @@
     "test": "pnpm test:cargo && pnpm test:node",
     "prepublishOnly": "pnpm build && pnpm move && pnpm test",
     "push": "npm publish --access public --registry https://registry.npmjs.com/"
-  }
+  },
+  "packageManager": "pnpm@7.20.0"
 }
