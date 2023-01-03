@@ -1,11 +1,11 @@
 [package]
 name = "auto_css_modules"
-version = "1.2.0"
+version = "1.3.0"
 authors = ["fz6m"]
 description = "Auto css modules plugin for swc"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/xn-sakina/swc-plugin-auto-css-modules.git"
+repository = "https://github.com/umijs/swc-plugin-auto-css-modules.git"
 publish = false
 
 [dependencies]
