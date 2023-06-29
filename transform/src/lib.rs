@@ -1,4 +1,3 @@
-#![allow(clippy::not_unsafe_ptr_arg_deref)]
 use serde::Deserialize;
 use swc_core::ecma::{
     ast::{ImportDecl, ImportSpecifier},
