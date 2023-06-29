@@ -8,6 +8,13 @@ Auto css modules plugin for swc.
   pnpm i -D swc-plugin-auto-css-modules
 ```
 
+You should install the following versions:
+
+|`@swc/core` version|working version|
+|:-:|:-:|
+| `latest` > version >= `1.3.41`|`swc-plugin-auto-css-modules@1.4.0`|
+| `1.3.41` > version >= `1.3.24`|`swc-plugin-auto-css-modules@1.3.0`|
+
 ## Usage
 
 ```diff
