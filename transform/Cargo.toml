@@ -9,18 +9,18 @@ repository = "https://github.com/umijs/swc-plugin-auto-css-modules.git"
 publish = false
 
 [dependencies]
-serde = { version = "1.0.163", features = ["derive"] }
-swc_core = { version = "0.76.39", features = [
+serde = { version = "1.0.164", features = ["derive"] }
+swc_core = { version = "0.79.0", features = [
   "ecma_visit",
   "ecma_ast",
 ] }
 
 [dev-dependencies]
-serde_json = "1.0.96"
+serde_json = "1.0.99"
 swc_core = { features = [
   "ecma_parser",
   "ecma_transforms",
   "testing_transform",
   "common",
-], version = "0.76.39" }
-testing = "0.33.13"
+], version = "0.79.0" }
+testing = "0.33.19"

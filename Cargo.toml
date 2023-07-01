@@ -15,9 +15,9 @@ crate-type = ["cdylib", "rlib"]
 lto = true
 
 [dependencies]
-serde_json = "1.0.96"
+serde_json = "1.0.99"
 auto_css_modules = { version = "1.4.0", path = "./transform" }
-swc_core = { version = "0.76.39", features = [
+swc_core = { version = "0.79.0", features = [
   "ecma_plugin_transform",
   "ecma_visit",
   "ecma_ast",
