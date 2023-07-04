@@ -37,7 +37,6 @@ jobs:
       # setup rust
       - uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable
           target: wasm32-wasi
 
       - name: Install dependencies
