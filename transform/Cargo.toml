@@ -1,6 +1,6 @@
 [package]
 name = "auto_css_modules"
-version = "1.5.0"
+version = "1.6.0"
 authors = ["fz6m"]
 description = "Auto css modules plugin for swc"
 edition = "2021"
@@ -9,18 +9,18 @@ repository = "https://github.com/umijs/swc-plugin-auto-css-modules.git"
 publish = false
 
 [dependencies]
-serde = { version = "1.0.164", features = ["derive"] }
-swc_core = { version = "0.79.0", features = [
+serde = { version = "1.0.197", features = ["derive"] }
+swc_core = { version = "0.90.13", features = [
   "ecma_visit",
   "ecma_ast",
 ] }
 
 [dev-dependencies]
-serde_json = "1.0.99"
+serde_json = "1.0.114"
 swc_core = { features = [
   "ecma_parser",
   "ecma_transforms",
   "testing_transform",
   "common",
-], version = "0.79.0" }
-testing = "0.33.19"
+], version = "0.90.13" }
+testing = "0.35.19"
