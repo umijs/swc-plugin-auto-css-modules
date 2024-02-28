@@ -8,7 +8,7 @@
     "test:issues": "tsx ./issues/optional-chaining.ts"
   },
   "devDependencies": {
-    "@swc/core": "^1.3.67",
-    "core-js": "^3.31.0"
+    "@swc/core": "^1.4.2",
+    "core-js": "^3.36.0"
   }
 }

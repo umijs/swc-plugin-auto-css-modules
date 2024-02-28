@@ -28,12 +28,12 @@
     "prepublishOnly": "pnpm build && pnpm move && pnpm test",
     "push": "npm publish --access public --registry https://registry.npmjs.com/"
   },
-  "packageManager": "pnpm@8.6.2",
+  "packageManager": "pnpm@8.15.2",
   "devDependencies": {
-    "@types/node": "^20.3.2",
-    "tsx": "^3.12.7",
-    "zx": "^7.2.2",
-    "@xn-sakina/mental": "^4.0.2",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.11.21",
+    "tsx": "^4.7.1",
+    "zx": "^7.2.3",
+    "@xn-sakina/mental": "^4.2.1",
+    "typescript": "^5.3.3"
   }
 }
