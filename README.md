@@ -12,7 +12,8 @@ You should install the following versions:
 
 |`@swc/core` version|working version|
 |:-:|:-:|
-| `latest` > version >= `1.3.106`|`swc-plugin-auto-css-modules@1.6.0`|
+| `latest` > version >= `1.4.0`|`swc-plugin-auto-css-modules@1.6.0`|
+| `1.3.108` > version >= `1.3.106`|Not support|
 | `1.3.106` > version >= `1.3.63`|`swc-plugin-auto-css-modules@1.5.0`|
 | `1.3.63` > version >= `1.3.41`|`swc-plugin-auto-css-modules@1.4.0`|
 | `1.3.41` > version >= `1.3.24`|`swc-plugin-auto-css-modules@1.3.0`|
